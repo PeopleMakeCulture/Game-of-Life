@@ -9,9 +9,6 @@ function App() {
       <h1>Game of Life</h1>
         <Board />
         <Controller/>
-      
-
-      
       <footer>
         <p>Built by Mercedes and Jing at <a href="http://www.fullstackacademy.com/">Fullstack Academy</a></p>
       </footer>

@@ -1,12 +1,24 @@
 import React from 'react';
 import './App.css';
+import { connect } from 'react-redux'
 
-function Board() {
+const Board = () => {
   return (
     <div id="container">
-      <table id='board'></table>
+      <table id='board'>
+        
+      </table>
     </div>
   );
 }
 
-export default Board
+const mapStateToProps = (state /*, ownProps*/) => {
+  return {
+    board: state.board
+  }
+}
+
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(Board)
