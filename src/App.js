@@ -1,25 +1,21 @@
 import React from 'react';
-import logo from './logo.svg';
+import Board from './Board'
+import Controller from './Controller'
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <div id="container">
+      <h1>Game of Life</h1>
+        <Board />
+        <Controller/>
+      
+
+      
+      <footer>
+        <p>Built by Mercedes and Jing at <a href="http://www.fullstackacademy.com/">Fullstack Academy</a></p>
+      </footer>
+  </div>
   );
 }
 
